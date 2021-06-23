@@ -122,7 +122,7 @@
               
                <img src="images/image9.png" class="inline" width="200" height="500"/> 
                
-             vi. Search for a Wait state, drag and place it below the Pass state, name it as Wait State, set the wait time to 5 sec.
+            vii. Search for a Wait state, drag and place it below the Pass state, name it as Wait State, set the wait time to 5 sec.
             
                <img src="images/image11.png" class="inline" width="700" height="400"/> 
 
