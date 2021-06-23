@@ -78,12 +78,10 @@
         - Creating a state machine
 
         - Start a new execution
-
-        - Update your state machine
      
      - Step 1:  Creating a state machine
      
-         A state machine is a visual representation of the workflow. We will leverage Workflow Studio to design, configure and examine each steps of the workflow.
+         A state machine is a visual representation of the workflow. We will leverage Workflow Studio to design, configure and examine each step of the workflow.
         
          1. Traverse to the <a href="https://console.aws.amazon.com/states/">AWS Step Functions</a> and Click on the Get Started option on the right
 
@@ -128,7 +126,7 @@
             
                <img src="images/image11.png" class="inline" width="700" height="400"/> 
 
-            viii. This will complete the workflow and it look as below, post that click Next
+            viii. This will complete the workflow and it looks as below, post that click Next
             
                <img src="images/image12.png" class="inline" width="700" height="400"/>  
                
@@ -136,27 +134,49 @@
               
                <img src="images/image13.png" class="inline" width="700" height="400"/>  
 
-               x. Now we will provide below details which is required to deploy the state machine  
+               x. Now we will provide below details which are required to deploy the state machine  
                
                - Name: name for the state machine
                
                - Permissions: IAM role to execute the state machine
                
-               - Logging: enable logging level like All, Error, Fatal and Off
+               - Logging: enable logging level like All, Error, Fatal, and Off
                
                - Tracing: enable Xray tracing
                
                - Tags: define tags to the state machine
                
-               <img src="images/image14.png" class="inline" width="200" height="500"/>
+               <img src="images/image14.png" class="inline" width="700" height="300"/>
                 
-               <img src="images/image15.png" class="inline" width="200" height="500"/>
+               <img src="images/image15.png" class="inline" width="700" height="300"/>
                
-               xi. Choose Create state machine 
+               xi. Choose to Create state machine 
                
                <img src="images/image16.png" class="inline" width="700" height="400"/>
      
      - Step 2:  Start a new execution
      
+         State machine executions are instances where we run the workflow to perform tasks.
+        
+         1. To start the execution, select Start execution from the job detail console
+         
+         2. Next we will provide the input i.e name and Input. Post that click Start execution
+            
+            <img src="images/image17.png" class="inline" width="700" height="400"/> 
+         
+            **Note**: name and Input both are optional.
+          
+         3. Once the execution is started we can verify the output as shown below
+
+            - Output when Validate flag is True
+            
+              <img src="images/image18.png" class="inline" width="700" height="400"/> 
+              
+              <img src="images/image19.png" class="inline" width="700" height="400"/> 
+            
+            - Output when Validate flag is False
+            
+              <img src="images/image20.png" class="inline" width="700" height="400"/> 
+              
+              <img src="images/image21.png" class="inline" width="700" height="400"/>   
      
-     - Step 3:  Update your state machine
