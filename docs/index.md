@@ -172,11 +172,11 @@
             
               <img src="images/image18.png" class="inline" width="700" height="400"/> 
               
-              <img src="images/image19.png" class="inline" width="700" height="400"/> 
+              <img src="images/image19.png" class="inline" width="700" height="200"/> 
             
             - Output when Validate flag is False
             
               <img src="images/image20.png" class="inline" width="700" height="400"/> 
               
-              <img src="images/image21.png" class="inline" width="700" height="400"/>   
+              <img src="images/image21.png" class="inline" width="700" height="200"/>   
      
