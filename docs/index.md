@@ -87,11 +87,11 @@
         
          1. Traverse to the <a href="https://console.aws.amazon.com/states/">AWS Step Functions</a> and Click on the Get Started option on the right
 
-            <img src="images/image1.png" class="inline" width="600" height="200"/>  
+            <img src="images/image1.png" class="inline" width="700" height="400"/>  
          
          2. Next we will select the authoring method, for this tutorial select Design your workflow visually and type as Standard. Post that click Next
             
-            <img src="images/image2.png" class="inline" width="600" height="200"/> 
+            <img src="images/image2.png" class="inline" width="700" height="400"/> 
          
             **Note**: To understand the difference between Standard and Express under Type section expand Help me decide option  
            
@@ -99,42 +99,64 @@
          
             i. Click on the Flow panel from the left pane, search for a Pass state, drag it to the empty state and label it as Start state
             
-               <img src="images/image3.png" class="inline" width="600" height="200"/> 
+               <img src="images/image3.png" class="inline" width="700" height="400"/> 
                
-               <img src="images/image4.png" class="inline" width="600" height="200"/> 
+               <img src="images/image4.png" class="inline" width="700" height="400"/> 
             
             ii. Search for a Choice state, drag and place it below the Start state, name it as Hello Step Function
             
-               <img src="images/image5.png" class="inline" width="600" height="200"/> 
+               <img src="images/image5.png" class="inline" width="700" height="400"/> 
                
             iii. Search for a Pass state again, drag and place it under one branch of the Choice state, name it as Pass state
                
-               <img src="images/image6.png" class="inline" width="600" height="200"/> 
+               <img src="images/image6.png" class="inline" width="700" height="400"/> 
             
              iv. Similarly place one more pass state as a Fail state to the other branch of the Choice state.
                 
              v. Now we will add rules in the Choice state to leverage the boolean variable $.Validate. If $.Validate is False, then the flow will be pointed towards the Fail state or it will continue its normal execution flow.
              
-               <img src="images/image7.png" class="inline" width="600" height="200"/> 
+               <img src="images/image7.png" class="inline" width="700" height="400"/> 
                
-               <img src="images/image8.png" class="inline" width="600" height="200"/> 
+               
+               <img src="images/image8.png" class="inline" width="700" height="200"/> 
 
              vi. Configure the default for the Choice state to be Yes, and the cause to be Not Hello World for the No Fail state.
               
-               <img src="images/image9.png" class="inline" width="600" height="200"/> 
-
-               <img src="images/image10.png" class="inline" width="600" height="200"/> 
-
+               <img src="images/image9.png" class="inline" width="200" height="500"/> 
+               
              vi. Search for a Wait state, drag and place it below the Pass state, name it as Wait State, set the wait time to 5 sec.
             
-               <img src="images/image11.png" class="inline" width="600" height="200"/> 
+               <img src="images/image11.png" class="inline" width="700" height="400"/> 
 
-            viii. Finally, search and drag another Pass state, name it as End State. This will complete the workflow and it look as below
+            viii. This will complete the workflow and it look as below, post that click Next
             
-               <img src="images/image12.png" class="inline" width="600" height="200"/> 
+               <img src="images/image12.png" class="inline" width="700" height="400"/>  
+               
+              ix. Now we will on the review section, under Definition section, review the visual design as well as the ASL code which is auto-generated. Once the review is completed, click Next at the button
+              
+               <img src="images/image13.png" class="inline" width="700" height="400"/>  
 
-             
+               x. Now we will provide below details which is required to deploy the state machine  
+               
+               - Name: name for the state machine
+               
+               - Permissions: IAM role to execute the state machine
+               
+               - Logging: enable logging level like All, Error, Fatal and Off
+               
+               - Tracing: enable Xray tracing
+               
+               - Tags: define tags to the state machine
+               
+               <img src="images/image14.png" class="inline" width="200" height="500"/>
+                
+               <img src="images/image15.png" class="inline" width="200" height="500"/>
+               
+               xi. Choose Create state machine 
+               
+               <img src="images/image16.png" class="inline" width="700" height="400"/>
      
      - Step 2:  Start a new execution
+     
      
      - Step 3:  Update your state machine
